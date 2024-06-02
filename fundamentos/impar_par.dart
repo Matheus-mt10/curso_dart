@@ -1,4 +1,4 @@
-import 'dart:io';
+
 
 void main(List<String> args) {
   print('Digite um número para verificar se é ímpar ou para');
