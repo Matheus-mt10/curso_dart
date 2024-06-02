@@ -1,6 +1,7 @@
 import 'dart:io';
 
 void main() {
+  print("Digite uma palavra ou frase: ");
   String test = stdin.readLineSync()!;
-  print(test);
+  print('A frase digitado é: ${test} ' );
 }
