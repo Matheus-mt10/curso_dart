@@ -8,12 +8,21 @@ void main(List<String> args) {
   String entrada = stdin.readLineSync().toString();
   double num = double.parse(entrada);
 
-  double celcius = convertCelcius(num);
+  double celcius = convertCelsius(num);
   print('O convertido para Graus Celcius é: $celcius');
+
+  stdout.write('Digite os graus celsius para a conversão em Fahrenheit: ');
+  String entrada2 = stdin.readLineSync().toString();
+  double num2 = double.parse(entrada2);
+  double fahrenheit = convertFahrenheit(num2);
+  print('O convertido para Graus Fahrenheit é: $fahrenheit');
+
 }
 
-double convertCelcius(double fahrenheit) {
-  return (fahrenheit - 32)* 5 / 9;
+double convertCelsius(double fahrenheit) {
+  return (fahrenheit - 32) * 5 / 9;
 }
 
-void convertFahrenheit() {}
+double convertFahrenheit(double celsius) {
+  return celsius * 1.8 + 32;
+}
